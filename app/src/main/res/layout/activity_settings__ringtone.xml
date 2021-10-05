@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.pozivnik.Settings_Ringtone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/currRingtone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="Trenutno zvonjenje:"
+            android:textColor="@color/mainText"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tvCurrRingtone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/Siren"
+            android:textColor="@color/mainText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="Glasnost zvonjenja:"
+            android:textColor="@color/mainText"
+            android:textSize="24sp" />
+
+        <SeekBar
+            android:id="@+id/ringtoneVolumeBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:max="100"
+            android:padding="@dimen/dimen_10"
+            android:progress="100" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_border_bottom"
+            android:checked="true"
+            android:gravity="center|center_vertical"
+            android:onClick="itemClicked"
+            android:padding="@dimen/dimen_10"
+            android:text="Zvonenje v tihem načinu"
+            android:textColor="@color/mainText" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Čas zvonenja (s):"
+                android:textColor="@color/mainText"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ring_time"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Čas v sekundah"
+                android:inputType="number"
+                android:text="60"
+                android:textAlignment="center"
+                android:textColor="@color/mainText"
+                android:textColorHighlight="@color/mainText"
+                android:textColorHint="@color/mainText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="203dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Čas zvonenja (s):"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/ring_time"
+                android:layout_width="234dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Čas v sekundah"
+                android:inputType="number"
+                android:text="60"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnChangeRingtone"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border_bottom"
+            android:onClick="changeRingtone"
+            android:padding="@dimen/dimen_10"
+            android:text="SPREMENI ZVONJENJE"
+            android:textColor="@color/mainText"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnDefaultRingtone"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border_bottom"
+            android:onClick="defaultRingtone"
+            android:padding="@dimen/dimen_10"
+            android:text="OSNOVNO ZVONJENJE"
+            android:textColor="@color/mainText"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="com.example.pozivnik.Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCallBackNumber"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border_bottom"
+            android:onClick="onBtnCallBackNumberClick"
+            android:text="@string/nastavitve_tevilk_za_javljanje"
+            android:textColor="@color/mainText" />
+
+        <Button
+            android:id="@+id/btnRingtone"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border_bottom"
+            android:onClick="onBtnRingtoneSettings"
+            android:text="@string/nastavitve_zvonenja"
+            android:textColor="@color/mainText" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border_bottom"
+            android:onClick="onBtnResetClick"
+            android:text="@string/resetiraj_nastavitve"
+            android:textColor="@color/mainText" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="@drawable/button_border_bottom"
+            android:onClick="onBtnResetClick"
+            android:text="@string/resetiraj_nastavitve" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

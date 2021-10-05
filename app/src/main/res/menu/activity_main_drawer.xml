@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/nastavitve"
+        android:title="@string/nastavitve">
+        <menu>
+            <item
+                android:id="@+id/prozilci"
+                android:title="@string/prozilci" />
+            <item
+                android:id="@+id/settings"
+                android:title="@string/nastavitve" />
+            <item
+                android:id="@+id/spinRss"
+                android:title="@string/spin_rss" />
+            <item
+                android:id="@+id/app_bar_switch"
+                android:title="@string/intervencije_net"
+                app:actionLayout="@layout/switch_item"
+                app:showAsAction="always" />
+            <item
+                android:id="@+id/test"
+                android:title="@string/test" />
+        </menu>
+    </item>
+
+</menu>
