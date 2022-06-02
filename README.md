@@ -14,5 +14,6 @@ Android app used for alerting firefighters and first responders. It’s designed
 
 ## Installation
 
-- [@Pozivnik](https://pozivnik.pivk77.com/)
+- [@Install - App](https://pozivnik.pivk77.com/)
+- [@Help - App](https://pozivnik.pivk77.com/navodila/)
     
