@@ -34,7 +34,8 @@
         android:enabled="true"
         android:exported="true" />
 
-    <receiver android:name="com.example.pozivnik.appWidget">
+    <receiver android:name="com.example.pozivnik.appWidget"
+        android:exported="true">
         <intent-filter>
             <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
         </intent-filter>
@@ -49,7 +50,8 @@
         android:label="@string/main_app_name"
         android:launchMode="singleTop"
         android:screenOrientation="portrait"
-        android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/AppTheme.NoActionBar"
+        android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
@@ -76,7 +78,8 @@
         android:name="com.example.pozivnik.Prozilci"
         android:label="@string/sporzilci_app_name" />
 
-    <receiver android:name="com.example.pozivnik.IncomingSms">
+    <receiver android:name="com.example.pozivnik.IncomingSms"
+        android:exported="true">
         <intent-filter android:priority="999">
             <action android:name="android.provider.Telephony.SMS_RECEIVED" />
         </intent-filter>
