@@ -36,4 +36,13 @@
     <string name="test">TEST</string>
     <string name="resetiraj_nastavitve">RESETIRAJ NASTAVITVE</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="trenutno_zvonjenje">Trenutno zvonjenje:</string>
+    <string name="glasnost_zvonjenja">Glasnost zvonjenja:</string>
+    <string name="zvonenje_v_tihem_na_inu">Zvonenje v tihem načinu</string>
+    <string name="as_zvonenja_s">Čas zvonenja (s):</string>
+    <string name="as_v_sekundah">Čas v sekundah</string>
+    <string name="_60">60</string>
+    <string name="spremeni_zvonjenje">SPREMENI ZVONJENJE</string>
+    <string name="osnovno_zvonjenje">OSNOVNO ZVONJENJE</string>
+    <string name="dodaj_nov_pro_ilec">Dodaj nov prožilec</string>
 </resources>

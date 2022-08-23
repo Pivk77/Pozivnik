@@ -23,7 +23,9 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|end"
             android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@drawable/baseline_add_alert_white_48" />
+            android:contentDescription="@string/dodaj_nov_pro_ilec"
+            app:srcCompat="@drawable/baseline_add_alert_white_48"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 

@@ -39,14 +39,6 @@
             android:text="@string/resetiraj_nastavitve"
             android:textColor="@color/mainText" />
 
-        <Button
-            android:id="@+id/btnReset"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:background="@drawable/button_border_bottom"
-            android:onClick="onBtnResetClick"
-            android:text="@string/resetiraj_nastavitve" />
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

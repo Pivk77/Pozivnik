@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Dokumenti/Business/Development/Android/Pozivnik/Pozivnik/app/src/main/res/layout/activity_prozilci.xml" value="0.1743659420289855" />
+        <entry key="..\:/Dokumenti/Business/Development/Android/Pozivnik/Pozivnik/app/src/main/res/layout/activity_settings.xml" value="0.23731884057971014" />
+        <entry key="..\:/Dokumenti/Business/Development/Android/Pozivnik/Pozivnik/app/src/main/res/layout/activity_settings__call_back_numbers.xml" value="0.1743659420289855" />
+        <entry key="..\:/Dokumenti/Business/Development/Android/Pozivnik/Pozivnik/app/src/main/res/layout/activity_settings__ringtone.xml" value="0.16286727456940223" />
+        <entry key="..\:/Dokumenti/Business/Development/Android/Pozivnik/Pozivnik/app/src/main/res/layout/activity_spin_rss.xml" value="0.1743659420289855" />
+      </map>
+    </option>
+  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="org.jetbrains.annotations.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />

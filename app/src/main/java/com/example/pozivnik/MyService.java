@@ -1,5 +1,8 @@
 package com.example.pozivnik;
 
+import static com.example.pozivnik.R.drawable;
+import static com.example.pozivnik.R.string;
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -10,11 +13,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.IBinder;
-import android.widget.Toast;
 
 import androidx.core.app.NotificationCompat;
-
-import static com.example.pozivnik.R.*;
 
 public class MyService extends Service {
 
@@ -52,7 +52,7 @@ public class MyService extends Service {
             Intent notificationIntent = new Intent(this, MainActivity.class);
 
             PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
-                    notificationIntent, 0);
+                    notificationIntent, PendingIntent.FLAG_IMMUTABLE);
 
             startForeground(NOTIF_ID, new NotificationCompat.Builder(this,
                     channelId) // don't forget create a notification channel first
@@ -68,7 +68,7 @@ public class MyService extends Service {
         Intent notificationIntent = new Intent(this, MainActivity.class);
 
         PendingIntent pendingIntent = PendingIntent.getActivity(this, 0,
-                notificationIntent, 0);
+                notificationIntent, PendingIntent.FLAG_IMMUTABLE);
 
         Notification notification = new NotificationCompat.Builder(this)
                 .setSmallIcon(drawable.ic_launcher_icon)
